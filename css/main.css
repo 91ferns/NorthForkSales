@@ -372,3 +372,12 @@ ol.dots li:hover {
 ol.dots li.active {
     background-color: rgba(166, 30, 54, 1);  
 }
+#mission .tint {
+    background-color: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.bio {
+    padding-left: 10px;
+}
