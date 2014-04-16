@@ -53,10 +53,11 @@ h1,h2,h3,h4 {
     margin: 0;   
 }
 
-#vendors-grid {
+#vendors-grid, #retailers-grid {
     padding: 25px;
 }
-#vendors-grid .row {
+#vendors-grid .row,
+#retailers-grid .row {
     margin-bottom: 15px;   
 }
 .client-image {
@@ -211,7 +212,7 @@ i.linkedin {
 }
 
 #footish {
-    
+    padding-top: 30px;
 }
 #footish .form-horizontal .form-group {margin-left: 0;margin-right:0;}
 #footish .office ol {padding: 0; margin: 0;}
@@ -251,9 +252,6 @@ i.linkedin {
     margin-bottom: 0;
     height: 700px;
 }
-.jumbotron .container {
-    margin-top: 180px;   
-}
 
 .jumbotron .container h1 {
     margin-bottom: 40px;
@@ -267,15 +265,7 @@ i.linkedin {
     
 }
 
-.navbar {
-    height: 100px;   
-}
-
 .navbar-nav li a {
-    height: 100px; 
-    padding: 38px 28px 0;
-    font-size: 17px;
-
     -webkit-transition: all 200ms ease-out;
     -moz-transition: all 200ms ease-out;
     -o-transition: all 200ms ease-out;
@@ -320,18 +310,6 @@ i.linkedin {
 #vendors .thumbnail h2 {
     color: #a61e36;
     margin-bottom: 10px;
-}
-
-.fixed-bg-pos {
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    height: 770px;
-    width: 100%;
-    display: block;
-    content: " ";
 }
 
 #mission {background-image: url(/img/fpo/ny-cityscape.jpg); }
@@ -381,3 +359,141 @@ ol.dots li.active {
 .bio {
     padding-left: 10px;
 }
+
+.navbar-brand img {
+    width: 100px;
+}
+
+.navbar-nav li a {
+    height: 40px;
+    padding: 25px 15px 0;
+    font-size: 17px;
+}
+
+body {
+    padding-top: 55px;
+}
+
+.navbar {
+    height: 55px;
+}
+
+#as-seen-on-tv {
+    display: none;
+}
+
+@media (max-width: 772px) {
+
+    #welcome .content-right {
+        padding: 15px;
+    }
+
+}
+
+.fixed-bg-pos {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 100%;
+    display: block;
+    content: " ";
+}
+
+.fixed-bg-pos {
+    min-height: 400px;  height: auto;
+}
+
+#mission {
+    padding: 0;
+}
+
+#mission .tint {
+    height: 100%;
+}
+
+#mission h1, #mission h2 {
+    text-transform: uppercase;
+    color: white;
+}
+
+#mission h2 {
+    font-size: 45px; text-shadow: black 0.05em 0.05em 0.05em; line-height: 60px;
+}
+#mission .container {text-align: center; padding: 30px;}
+
+#vendors .row .col-lg-4 {
+    max-width: 80%; margin: 0 auto;
+}
+@media (min-width:768px) {
+    .navbar-brand img {
+        width: 160px;
+    }
+
+    .navbar-nav li a {
+        height: 40px;
+        padding: 25px 15px 0;
+        font-size: 17px;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+}
+
+
+@media (min-width:992px) {
+
+    .jumbotron .container {
+        margin-top: 180px;
+    }
+
+    #mission .tint { padding: 30px; }
+
+    .fixed-bg-pos {
+        min-height: 770px;
+    }
+
+     .navbar-brand img {
+        width: 160px;
+    }
+
+    .navbar-nav li a {
+        height: 40px;
+        padding: 25px 15px 0;
+        font-size: 17px;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
+}
+
+@media (min-width:1200px) {
+
+    /** Nav Stuff **/
+
+    #as-seen-on-tv {
+        width: 250px; height: 195px; display: block;
+    }
+
+    .navbar-brand img {
+        width: 260px;
+    }
+
+    .navbar-nav li a {
+        height: 100px;
+        padding: 38px 28px 0;
+        font-size: 17px;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+}
+
+
+

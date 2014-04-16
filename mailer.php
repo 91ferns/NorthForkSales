@@ -5,7 +5,7 @@ $co = (isset($_POST['Company']) && !empty($_POST['Company'])) ? $_POST['Company'
 $message = (isset($_POST['Message']) && !empty($_POST['Message'])) ? $_POST['Message'] : false;
 $email = (isset($_POST['Email']) && !empty($_POST['Email'])) ? $_POST['Email'] : false;
 
-$headers = array(sprintf("Reply-to: %s", $email), "From: mailer@91ferns.com");
+$headers = array(sprintf("Reply-to: %s", $email), "From: mailer@northforksales.com");
 
 mail( "jhamlett@northforksales.com", "New Message from ".$name, $message."\n\nCompany: ".$co, implode("\r\n", $headers ) );
 
