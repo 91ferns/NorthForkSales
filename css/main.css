@@ -451,7 +451,7 @@ body {
 
     #mission .tint { padding: 30px; }
 
-    .fixed-bg-pos {
+    .fixed-bg-pos,.tint {
         min-height: 770px;
     }
 
