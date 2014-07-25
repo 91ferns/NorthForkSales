@@ -6464,7 +6464,7 @@ i.linkedin {
   margin-bottom: 10px;
 }
 #mission {
-  background-image: url(/img/fpo/ny-cityscape.jpg);
+  background-image: url(../img/fpo/ny-cityscape.jpg);
 }
 #mission h1,
 #mission p {
@@ -6478,11 +6478,11 @@ i.linkedin {
   background-position: center top;
 }
 #ml-wrapper {
-  background-image: url(/img/fpo/entrepreneur.jpg);
+  background-image: url(../img/fpo/entrepreneur.jpg);
   background-position: center -100px;
 }
 #under-content {
-  background-image: url(/img/fpo/sales.jpg);
+  background-image: url(../img/fpo/sales.jpg);
 }
 .company-slider-wrapper {
   height: 523px;
