@@ -1,5 +1,5 @@
 (function($) {
-    
+
     $('.company-slider-wrapper').unslider({dots:true});
     $('.navbar a').each(function() {
 		href = $(this).attr('href');
@@ -27,7 +27,7 @@
             c = $("#"+$(this).attr('data-href'));
             theTop = parseInt(c.position().top);
             breakpoints[theTop] = sel;
-        });	
+        });
     }
     $(function() {
         setBreakpoints();
@@ -40,7 +40,6 @@
             if (x > $('body').scrollTop()) break;
             correct = x;
         }
-        console.log(correct);
         if (correct == 0) {
             $('ul.nav li a').parent().removeClass('active');
         } else {

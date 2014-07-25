@@ -1,55 +1,8 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>North Fork Sales</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-            @media (min-width: 1200px) {
-                .container {width:1000px;}
-            }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+---
+layout: default
+---
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    </head>
-    <body>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img src="img/logo.png" ></a>
-        </div>
-        <div class="navbar-collapse collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <li><a href="#welcome">What We Do</a></li>
-            <li><a href="#vendors">Vendors</a></li>  
-            <li><a href="#team">Team</a></li>
-            <li><a href="#clients">Clients</a></li>
-            <li><a href="#footish">Contact</a></li>
-          </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
-        
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron fixed-bg-pos" id="mission">
         <div class="tint">
@@ -61,35 +14,35 @@
            </div>
             </div>
     </div>
-        
+
     <div class="section-header container-fluid">
             <div class="container">
                 <h1>Welcome to North Fork Sales</h1>
             </div>
         </div>
-        
+
     <div class="container-fluid" id="welcome">
       <div class="container with-tab" style="padding-bottom: 100px;">
-          
+
           <div class="row">
-          <div class="pull-left" style="" id="as-seen-on-tv"><img src="/img/as-seen-on-tv.png" style="width: 250px;" alt=""></div>
+          <div class="pull-left" style="" id="as-seen-on-tv"><img src="{{ '/img/as-seen-on-tv.png' | prepend: site.baseurl }}" style="width: 250px;" alt=""></div>
           <div class="content-right">
               <h2>As Seen On Your Shelves</h2>
-          
+
           <p>Purchase the latest as-seen on TV and trend items direct and fill your valuable space with products that are proven to sell.</p>
-          
+
           <p>North Fork Sales provides wholesale distribution channels for today’s hottest items to vendors nationwide. With a focus on both retail and catalog markets, our clientele includes big-box stores, national publications, and independent outlets alike. We offer a wide selection of merchandise that allows you to tailor the shopping experience to your target demographic and maximize your return.</p>
 
             <p>Give your customers what they want and see what we can do for your business and bottom line.</p>
-              
+
             <h2>We’re in Your Corner</h2>
-          
+
           <p>Trust is important. We pride ourselves in fostering enduring relationships with our clients – many of which have spanned decades – through integrity and outstanding service. We believe that hard work and a commitment to excellence are at the core of everything we do, and we believe that our successes are fundamentally linked to yours.</p>
-              
+
           </div>
         </div>
-        
-              
+
+
       </div>
     </div>
 <div class="container-fluid fixed-bg-pos" id="under-content">
@@ -106,21 +59,21 @@
       <div class="row">
         <div class="col-lg-4">
             <div class="thumbnail">
-                <div class="wrapper" style="background-image: url(/img/vendors/allstar.png)"></div>
+                <div class="wrapper" style="background-image: url('{{ '/img/vendors/allstar.png' | prepend: site.baseurl }}');"></div>
               <h2>Allstar Marketing Group</h2>
               <p>With over 50 original products, Allstar has been a dominant force in the field since 2002. Experts in brand management, their now ubiquitous Snuggie has enjoyed sales surpassing $500 million.</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="thumbnail">
-              <div class="wrapper" style="background-image: url(/img/vendors/telebrands.png)"></div>
+              <div class="wrapper" style="background-image: url('{{ '/img/vendors/telebrands.png' | prepend: site.baseurl }}');"></div>
               <h2>Telebrands</h2>
               <p>Industry veterans with over 30 years’ experience, Telebrands has launched hundreds of successful campaigns including the Hurricane Mop, Pocket Hose, and Stone Wave.</p>
           </div>
        </div>
         <div class="col-lg-4">
           <div class="thumbnail">
-            <div class="wrapper" style="background-image: url(/img/vendors/northernresponse.jpg)"></div>
+            <div class="wrapper" style="background-image: url('{{ '/img/vendors/northernresponse.jpg' | prepend: site.baseurl }}');"></div>
               <h2>Northern Response</h2>
               <p>The largest distributor of infomercials in Canada, Northern Response distributes product to over 90 countries. With full market coverage in the US, their clients include major retailers such as Target, Walmart, and Bed Bath &amp; Beyond.</p>
           </div>
@@ -129,30 +82,30 @@
         <div class="row">
         <div class="col-lg-4">
             <div class="thumbnail">
-               <div class="wrapper" style="background-image: url(/img/vendors/bluebanana.png)"></div>
+               <div class="wrapper" style="background-image: url('{{ '/img/vendors/bluebanana.png' | prepend: site.baseurl }}');"></div>
               <h2>Blue Banana Group</h2>
               <p>The UK’s home of alternative clothing, jewelry, and accessories, Blue Banana provides current trend items encompassing all facets of popular culture.</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="thumbnail">
-               <div class="wrapper" style="background-image: url(/img/vendors/hampton.png);"></div>
+               <div class="wrapper" style="background-image: url('{{ '/img/vendors/hampton.png' | prepend: site.baseurl }}');"></div>
               <h2>Hampton Direct</h2>
               <p>Marketers of some of the most successful products in As Seen On TV history, Hampton Direct focuses on providing real solutions to everyday household problems.</p>
           </div>
        </div>
         <div class="col-lg-4">
           <div class="thumbnail">
-               <div class="wrapper" style="background-image: url(/img/vendors/ontel.jpg)"></div>
+               <div class="wrapper" style="background-image: url('{{ '/img/vendors/ontel.jpg' | prepend: site.baseurl }}');"></div>
               <h2>Ontel</h2>
               <p>Since 1994, Ontel has been a leader in development of innovative consumer products such as Pillow Pets and the Slap Chop. Sold in over 30 countries, their products accomplish their company mission of making their customers’ lives more enjoyable.</p>
           </div>
         </div>
       </div>
 
-      
+
     </div> <!-- /container -->
-    
+
         <div class="container-fluid" id="mailing-list" style="padding: 20px 0;">
         <div class="container">
             <div class="center">
@@ -166,12 +119,12 @@
                 <input type="text" class="form-control" placeholder="Email Address" name="EMAIL">
                     <div style="position: absolute; left: -5000px;"><input type="text" name="b_2e20ec18ffa0e95ad22210ca2_a48762f19b" value=""></div>
                 </div>
-    
-                
+
+
                 <div class="form-group">
                     <button type="submit" class="btn btn-default">Join</button>
                 </div>
-                
+
             </form>
             </div>
         </div>
@@ -179,7 +132,7 @@
         <div id="ml-wrapper" class="fixed-bg-pos container-fluid">
         </div>
         <div class="container" style="padding-top:20px;height:auto;" id="team">
-            
+
             <div class="center">
                 <h2>Meet Our Team</h2>
                 <span class="tiny-one"></span>
@@ -191,31 +144,31 @@
                                     <div class="social">
                                     <ul>
                                         <li><a href="#"><i class="gplus"></i></a></li>
-                                        <li><a href="#"><i class="facebook"></i></a></li>    
-                                        <li><a href="#"><i class="linkedin"></i></a></li>    
-                                        <li><a href="#"><i class="twitter"></i></a></li>    
-                                    </ul>    
+                                        <li><a href="#"><i class="facebook"></i></a></li>
+                                        <li><a href="#"><i class="linkedin"></i></a></li>
+                                        <li><a href="#"><i class="twitter"></i></a></li>
+                                    </ul>
                                 </div>
                                 <div class="bio">
                                 <h3>Joshua Hamlett</h3>
                                 <h4>Global Accounts</h4>
                                 <p>A Long Island native, Josh has excelled in every endeavor he’s undertaken - whether it be in business, athletics, or academics. After obtaining a B.A. in Business Management from Adelphi University and competing on their college golf team, he turned his attention toward making an impact in sales and has been a force in the distribution industry ever since. Still an avid golfer, Josh also enjoys playing hockey and traveling. He believes that his success can be attributed to both his focus on building relationships and genuine love of selling.</p>
-                                
+
                                     </div>
                             </div>
-                            
-                            <!--img src="img/fpo/person1.jpg" alt="Jonathan" style="width:100%;"-->
-                            
+
+                            <!--img src="{{ '/img/fpo/person1.jpg' | prepend: site.baseurl }}" alt="Jonathan" style="width:100%;"-->
+
                         </li>
                         <li>
                             <div class="mask">
                                     <div class="social">
                                     <ul>
                                         <li><a href="#"><i class="gplus"></i></a></li>
-                                        <li><a href="#"><i class="facebook"></i></a></li>    
-                                        <li><a href="#"><i class="linkedin"></i></a></li>    
-                                        <li><a href="#"><i class="twitter"></i></a></li>    
-                                    </ul>    
+                                        <li><a href="#"><i class="facebook"></i></a></li>
+                                        <li><a href="#"><i class="linkedin"></i></a></li>
+                                        <li><a href="#"><i class="twitter"></i></a></li>
+                                    </ul>
                                 </div>
                                 <div class="bio">
                                 <h3>Stephen Klein</h3>
@@ -224,23 +177,23 @@
                                 <p><strong class="maroon">When not working:</strong> Stephen can be found golfing and spending his time on the North Fork of Long Island.</p>
                                     </div>
                             </div>
-                            
-                            <!--img src="img/fpo/person1.jpg" alt="Jonathan" style="width:100%;"-->
-                            
+
+                            <!--img src="{{ '/img/fpo/person1.jpg' | prepend: site.baseurl }}" alt="Jonathan" style="width:100%;"-->
+
                         </li>
                     </ul>
                 </div>
         </div>
-            
-    
-    
-        
+
+
+
+
         <div class="section-header container-fluid" id="clients">
             <div class="container">
                 <h2>Clients</h2>
             </div>
         </div>
-        
+
         <div class="container with-tab" id="vendors-grid">
             <p style="padding: 20px 0; margin: 0 auto; max-width: 80%; font-size: 17px;">Our clients include national retailers, startups, and everything in between. We take pride in making the most innovate, in-demand items available to customers nationwide. Make sure what’s on your shelves is what your patrons want – let North Fork Sales optimize your retail space and provide your business with guaranteed returns.</p>
             <div class="row">
@@ -249,7 +202,7 @@
                         <div class="mask">
                             <div class="title-bar">KMart</div>
                         </div>
-                        <img src="img/logos/kmart.png" alt="KMart">
+                        <img src="{{ '/img/logos/kmart.png' | prepend: site.baseurl }}" alt="KMart">
                     </div>
                 </div>
                 <div class="col-xs-3">
@@ -257,7 +210,7 @@
                         <div class="mask">
                             <div class="title-bar">Dollar General</div>
                         </div>
-                        <img src="img/logos/dollargeneral.png" alt="Dollar General">
+                        <img src="{{ '/img/logos/dollargeneral.png' | prepend: site.baseurl }}" alt="Dollar General">
                     </div>
                 </div>
                 <div class="col-xs-3">
@@ -265,7 +218,7 @@
                         <div class="mask">
                             <div class="title-bar">CVS</div>
                         </div>
-                        <img src="img/logos/cvs.png" alt="CVS">
+                        <img src="{{ '/img/logos/cvs.png' | prepend: site.baseurl }}" alt="CVS">
                     </div>
                 </div>
                 <div class="col-xs-3">
@@ -273,7 +226,7 @@
                         <div class="mask">
                             <div class="title-bar">Rite Aid</div>
                         </div>
-                        <img src="img/logos/riteaid.png" alt="">
+                        <img src="{{ '/img/logos/riteaid.png' | prepend: site.baseurl }}" alt="">
                     </div>
                 </div>
             </div>
@@ -283,7 +236,7 @@
                         <div class="mask">
                             <div class="title-bar">Bed, Bath, &amp; Beyond</div>
                         </div>
-                        <img src="img/logos/bedbathbeyond.png" alt="Bed Bath and Beyond">
+                        <img src="{{ '/img/logos/bedbathbeyond.png' | prepend: site.baseurl }}" alt="Bed Bath and Beyond">
                     </div>
                 </div>
                 <div class="col-xs-3">
@@ -291,7 +244,7 @@
                         <div class="mask">
                             <div class="title-bar">Fry's Electronics</div>
                         </div>
-                        <img src="img/logos/frys.png" alt="Fry's Electronics">
+                        <img src="{{ '/img/logos/frys.png' | prepend: site.baseurl }}" alt="Fry's Electronics">
                     </div>
                 </div>
                 <div class="col-xs-3">
@@ -299,7 +252,7 @@
                         <div class="mask">
                             <div class="title-bar">HSN</div>
                         </div>
-                        <img src="img/logos/hsn.png" alt="HSN">
+                        <img src="{{ '/img/logos/hsn.png' | prepend: site.baseurl }}" alt="HSN">
                     </div>
                 </div>
                 <div class="col-xs-3">
@@ -307,7 +260,7 @@
                         <div class="mask">
                             <div class="title-bar">Kitchen Collection</div>
                         </div>
-                        <img src="img/logos/kitchencollection.png" alt="Kitchen Collection">
+                        <img src="{{ '/img/logos/kitchencollection.png' | prepend: site.baseurl }}" alt="Kitchen Collection">
                     </div>
                 </div>
             </div>
@@ -317,7 +270,7 @@
                         <div class="mask">
                             <div class="title-bar">Groupon</div>
                         </div>
-                        <img src="img/logos/groupon.png" alt="Groupon">
+                        <img src="{{ '/img/logos/groupon.png' | prepend: site.baseurl }}" alt="Groupon">
                     </div>
                 </div>
                 <div class="col-xs-3">
@@ -325,7 +278,7 @@
                         <div class="mask">
                             <div class="title-bar">Duane Reade</div>
                         </div>
-                        <img src="img/logos/duanereade.png" alt="Duane Reade">
+                        <img src="{{ '/img/logos/duanereade.png' | prepend: site.baseurl }}" alt="Duane Reade">
                     </div>
                 </div>
                 <div class="col-xs-3">
@@ -333,7 +286,7 @@
                         <div class="mask">
                             <div class="title-bar">Amazon</div>
                         </div>
-                        <img src="img/logos/amazon.png" alt="Amazon">
+                        <img src="{{ '/img/logos/amazon.png' | prepend: site.baseurl }}" alt="Amazon">
                     </div>
                 </div>
                 <div class="col-xs-3">
@@ -341,7 +294,7 @@
                         <div class="mask">
                             <div class="title-bar">Costco</div>
                         </div>
-                        <img src="img/logos/costco.png" alt="Costco">
+                        <img src="{{ '/img/logos/costco.png' | prepend: site.baseurl }}" alt="Costco">
                     </div>
                 </div>
             </div>
@@ -355,7 +308,7 @@
                         <div class="mask">
                             <div class="title-bar">BJ's</div>
                         </div>
-                        <img src="img/logos/bjs.png" alt="BJ's">
+                        <img src="{{ '/img/logos/bjs.png' | prepend: site.baseurl }}" alt="BJ's">
                     </div>
                 </div>
                 <div class="col-xs-3">
@@ -363,7 +316,7 @@
                         <div class="mask">
                             <div class="title-bar">Office Depot</div>
                         </div>
-                        <img src="img/logos/officedepot.png" alt="Office Depot">
+                        <img src="{{ '/img/logos/officedepot.png' | prepend: site.baseurl }}" alt="Office Depot">
                     </div>
                 </div>
                 <div class="col-xs-3">
@@ -371,7 +324,7 @@
                         <div class="mask">
                             <div class="title-bar">Office Max</div>
                         </div>
-                        <img src="img/logos/officemax.png" alt="Office Max">
+                        <img src="{{ '/img/logos/officemax.png' | prepend: site.baseurl }}" alt="Office Max">
                     </div>
                 </div>
                 <div class="col-xs-3">
@@ -379,7 +332,7 @@
                         <div class="mask">
                             <div class="title-bar">PCH</div>
                         </div>
-                        <img src="img/logos/pch.png" alt="Publisher's Clearing House">
+                        <img src="{{ '/img/logos/pch.png' | prepend: site.baseurl }}" alt="Publisher's Clearing House">
                     </div>
                 </div>
             </div>
@@ -390,7 +343,7 @@
                         <div class="mask">
                             <div class="title-bar">Harriet Carter</div>
                         </div>
-                        <img src="img/logos/harrietcarter.png" alt="Harriet Carter">
+                        <img src="{{ '/img/logos/harrietcarter.png' | prepend: site.baseurl }}" alt="Harriet Carter">
                     </div>
                 </div>
                 <div class="col-xs-3">
@@ -398,7 +351,7 @@
                         <div class="mask">
                             <div class="title-bar">Dr. Leonard's</div>
                         </div>
-                        <img src="img/logos/drleonards.png" alt="Dr. Leonards">
+                        <img src="{{ '/img/logos/drleonards.png' | prepend: site.baseurl }}" alt="Dr. Leonards">
                     </div>
                 </div>
                 <div class="col-xs-3">
@@ -406,7 +359,7 @@
                         <div class="mask">
                             <div class="title-bar">Walgreens</div>
                         </div>
-                        <img src="img/logos/walgreens.png" alt="Walgreens">
+                        <img src="{{ '/img/logos/walgreens.png' | prepend: site.baseurl }}" alt="Walgreens">
                     </div>
                 </div>
                 <div class="col-xs-3">
@@ -414,7 +367,7 @@
                         <div class="mask">
                             <div class="title-bar">Pepboys</div>
                         </div>
-                        <img src="img/logos/pepboys.png" alt="Pepboys">
+                        <img src="{{ '/img/logos/pepboys.png' | prepend: site.baseurl }}" alt="Pepboys">
                     </div>
                 </div>
             </div>
@@ -440,7 +393,7 @@
                         <li><span class="glyphicon glyphicon-print"></span> (914) 560-2151</li>
                         <li><span class="glyphicon glyphicon-envelope"></span> jhamlett (at) northforksales.com </li>
                     </ol>
-                    <img class="thumbnail" src="/img/map.jpg" alt="" style="width:90%; text-align:center;">
+                    <img class="thumbnail" src="{{ '/img/map.jpg' | prepend: site.baseurl }}" alt="" style="width:90%; text-align:center;">
                 </div>
                 <div class="col-md-4">
                     <h3>Get in Touch</h3>
@@ -465,29 +418,7 @@
                 <div class="col-md-4">
                     <h3>Great Ideas</h3>
                     <p>We’re always looking for the next big thing. If you think you’ve got it, tell us about it.</p>
-                    <div style="width: 20%; margin-left: 40%; text-align: center;"><img src="/img/lightbulb.png" style="width: 100%;"></div>
+                    <div style="width: 20%; margin-left: 40%; text-align: center;"><img src="{{ '/img/lightbulb.png' | prepend: site.baseurl }}" style="width: 100%;"></div>
                 </div>
             </div>
       </div>
-        <hr>
-    <footer style="padding: 6px 0 20px;">
-        <div class="container">
-        <a style="float: right;" href="//91ferns.com"><img style="width: 120px;" src="https://secure.91ferns.com/img/91ferns.png"></a>
-        <div style="padding-top: 10px;">&copy; North Fork Sales 2014. All rights reserved. </div>
-        </div>
-    </footer>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-        
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="//unslider.com/unslider.min.js"></script>
-        <script src="js/main.js"></script>
-
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-    </body>
-</html>
