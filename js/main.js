@@ -1,5 +1,65 @@
 (function($) {
 
+  var inTouchForm = $('#getInTouchForm');
+
+  function createAPIInput(field, value) {
+    return $('<input>').attr('name', 'api_mail['+field+']').attr('type', 'hidden').val(value).hide()
+  }
+
+  function APIRedirectTo(url) {
+    return $('<input>').attr('name', 'redirect_to').attr('type', 'hidden').val(url).hide();
+  }
+
+  if (inTouchForm) {
+    inTouchForm.submit(function() {
+      var ctxt = $(this);
+
+      $('.api', ctxt).remove();
+      $('<div>').addClass('api').appendTo(ctxt);
+
+      var name = $('[name="FullName"]', ctxt).val();
+      var company = $('[name="Company"]', ctxt).val();
+      var email = $('[name="Email"]', ctxt).val();
+      var message = $('[name="Message"]', ctxt).val();
+
+      company = company || '';
+
+      if (!name) {
+        alert('Please enter your name');
+        return false;
+      } else if (!email) {
+        alert('Please enter your email address');
+        return false;
+      } else if (!message) {
+        alert('Please enter a message');
+        return false;
+      }
+
+      var fullMessage = "New Message from " + name + "\n\n" + message + "\n\nCompany: " + company;
+
+      var apiFrom = createAPIInput('from', name),
+          apiMessage = createAPIInput('message', fullMessage),
+          apiApplication = createAPIInput('application', 'northfork'),
+          apiAdditional = createAPIInput('additional', ''),
+          apiSubject = createAPIInput('subject', "New Message from " + name),
+          apiName = createAPIInput('name', name),
+          redirect = APIRedirectTo(window.location.href);
+
+      ctxt
+        .find('.api')
+        .append(apiFrom)
+        .append(apiMessage)
+        .append(apiApplication)
+        .append(apiAdditional)
+        .append(apiSubject)
+        .append(apiName)
+        .append(redirect);
+
+      return true;
+
+    }); //attr('action', 'javascript: void(0)')
+  }
+
     $('.company-slider-wrapper').unslider({dots:true});
     $('.navbar a').each(function() {
 		href = $(this).attr('href');
